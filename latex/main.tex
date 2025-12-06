@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{graphicx}
+
+\geometry{left=25mm, right=25mm, top=25mm, bottom=25mm}
+
+\pagestyle{fancy}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{Dawid Szuber}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{
+    \fancyhf{} 
+    \fancyhead[L]{\nouppercase{\leftmark}}
+    \fancyhead[R]{Dawid Szuber}
+    \fancyfoot[C]{\thepage}
+}
+\title{\textbf{Programowanie Obiektowe:\\Teoria i Praktyka}}
+\author{Dawid Szuber}
+\date{03.12.2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+Niniejsza praca stanowi kompleksowe wprowadzenie do paradygmatu programowania obiektowego (OOP). Opracowanie prowadzi czytelnika od podstawowych definicji klasy i obiektu, poprzez omówienie czterech fundamentalnych filarów OOP (hermetyzacja, dziedziczenie, polimorfizm, abstrakcja), aż po zaawansowane dobre praktyki, takie jak zasady SOLID oraz różnice między dziedziczeniem a kompozycją. Całość zwieńczona jest przeglądem literatury branżowej oraz propozycjami projektów praktycznych.
+\end{abstract}
+
+\tableofcontents
+
+\include{rozdzial1}
+\include{rozdzial2}
+\include{rozdzial3}
+\include{rozdzial4}
+\include{rozdzial5}
+
+\begin{thebibliography}{9}
+
+\bibitem{gof}
+Gamma E., Helm R., Johnson R., Vlissides J.,
+\textit{Wzorce projektowe. Elementy oprogramowania obiektowego wielokrotnego użytku}.
+Helion.
+
+\bibitem{cleancode}
+Martin R. C.,
+\textit{Czysty kod. Podręcznik dobrego programisty}.
+Helion.
+
+\bibitem{headfirst}
+Freeman E., Robson E.,
+\textit{Rusz głową! Wzorce projektowe}.
+Helion.
+
+\bibitem{refactoring}
+Fowler M.,
+\textit{Refaktoryzacja. Ulepszanie struktury istniejącego kodu}.
+Helion.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,23 @@
+\chapter{Cztery Filary Programowania Obiektowego}
+
+Siła programowania obiektowego opiera się na czterech fundamentalnych koncepcjach.
+
+\section{Hermetyzacja (Enkapsulacja)}
+Hermetyzacja to idea łączenia danych i metod w jedną całość oraz \textbf{ukrywanie wewnętrznego stanu obiektu} przed światem zewnętrznym. Inne obiekty nie powinny mieć bezpośredniego dostępu do atrybutów. Dostęp odbywa się przez publiczne metody (gettery i settery).
+
+\textbf{Przykład:} W klasie \texttt{KontoBankowe} atrybut \texttt{saldo} jest prywatny. Metoda ,,wypłać'' sprawdza poprawność operacji przed zmianą stanu, co chroni obiekt przed nieprawidłowym użyciem.
+
+\section{Dziedziczenie}
+Dziedziczenie pozwala tworzyć nową klasę (pochodną) na podstawie istniejącej klasy (bazowej). Klasa pochodna dziedziczy atrybuty i metody, mogąc je rozszerzać lub nadpisywać.
+
+\textbf{Przykład:} Klasy \texttt{Samochod} i \texttt{Motocykl} dziedziczą po klasie \texttt{Pojazd}. Modeluje to relację ,,jest'' (ang. \textit{is-a}).
+
+\section{Polimorfizm}
+Polimorfizm to zdolność obiektów różnych klas do odpowiadania na to samo wywołanie metody w sposób specyficzny dla ich typu.
+
+\textbf{Przykład:} Metoda ,,jedź'' działa inaczej dla klasy \texttt{Samochod} i inaczej dla klasy \texttt{Motocykl}, ale wywołujemy ją tak samo.
+
+\section{Abstrakcja}
+Abstrakcja to proces ukrywania złożonych szczegółów implementacyjnych i pokazywania użytkownikowi tylko niezbędnych funkcji.
+
+\textbf{Przykład:} Używasz pedału gazu (interfejs), nie martwiąc się o wtrysk paliwa (implementacja). W kodzie realizuje się to przez klasy abstrakcyjne lub interfejsy.

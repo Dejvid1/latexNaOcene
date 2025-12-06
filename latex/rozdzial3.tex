@@ -1,0 +1,43 @@
+\chapter{Zaawansowane Koncepcje i Dobre Praktyki}
+
+Efektywne programowanie wymaga znajomości wzorców i zasad, które pomagają tworzyć kod elastyczny.
+
+\section{Konstruktory i Destruktory}
+\begin{itemize}
+    \item \textbf{Konstruktor:} Metoda wywoływana automatycznie przy tworzeniu obiektu (inicjalizacja).
+    \item \textbf{Destruktor:} Metoda wywoływana przed zniszczeniem obiektu (zwalnianie zasobów).
+\end{itemize}
+
+\section{Dziedziczenie a Kompozycja}
+Często lepszym podejściem od dziedziczenia (relacja ,,jest'') jest \textbf{kompozycja} (relacja ,,ma'').
+\begin{itemize}
+    \item Dziedziczenie: \texttt{Samochod} \textbf{jest} \texttt{Pojazdem}.
+    \item Kompozycja: \texttt{Samochod} \textbf{ma} \texttt{Silnik}.
+\end{itemize}
+Kompozycja jest bardziej elastyczna i pozwala na luźniejsze powiązania między klasami.
+
+\subsection{Porównanie: Dziedziczenie vs Kompozycja}
+Poniższa tabela podsumowuje kluczowe różnice:
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Cecha} & \textbf{Dziedziczenie (,,IS-A'')} & \textbf{Kompozycja (,,HAS-A'')} \\ \hline
+\textbf{Definicja} & Klasa pochodna dziedziczy po bazowej. & Klasa zawiera instancję innej klasy. \\ \hline
+\textbf{Wiązanie} & Silne (\textit{tight coupling}). & Luźne (\textit{loose coupling}). \\ \hline
+\textbf{Elastyczność} & Mniejsza (ustalana przy kompilacji). & Większa (możliwa wymiana w trakcie działania). \\ \hline
+\end{tabularx}
+\caption{Porównanie dziedziczenia i kompozycji.}
+\end{table}
+
+\section{Zasady SOLID}
+Zbiór pięciu zasad SOLID pomaga tworzyć zrozumiałe oprogramowanie:
+\begin{enumerate}
+    \item \textbf{S (Single Responsibility):} Jedna klasa, jedna odpowiedzialność.
+    \item \textbf{O (Open/Closed):} Otwarte na rozszerzenia, zamknięte na modyfikacje.
+    \item \textbf{L (Liskov Substitution):} Podklasy muszą móc zastąpić klasy bazowe.
+    \item \textbf{I (Interface Segregation):} Wiele małych interfejsów zamiast jednego dużego.
+    \item \textbf{D (Dependency Inversion):} Zależność od abstrakcji, nie od konkretów.
+\end{enumerate}

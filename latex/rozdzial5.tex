@@ -1,0 +1,20 @@
+\chapter{wnioski}
+
+W tym projekcie, podczas doboru klasy do tekstu w latexie, podjęłem decyzję o wyborze klasy dokumentu \texttt{report}, rezygnując z klasy \texttt{book}.
+
+Główne powody, dla których klasa \texttt{report} jest lepszym rozwiązaniem w tym przypadku:
+
+\begin{enumerate}
+    \item \textbf{Struktura dokumentu:} Klasa \texttt{book} jest przeznaczona do składu pełnowymiarowych książek. Dzieli ona treść na części (\textit{parts}), rozdziały (\textit{chapters}) i sekcje, a także wprowadza podział na \textit{frontmatter} (wstęp), \textit{mainmatter} (treść główna) i \textit{backmatter} (dodatki). Dla pracy o objętości kilkunastu stron taka struktura jest nadmiarowa. Klasa \texttt{report} idealnie sprawdza się w przypadku prac dyplomowych i raportów technicznych, które składają się z kilku rozdziałów, ale nie wymagają skomplikowanej struktury książkowej.
+    
+    \item \textbf{Formatowanie stron (Jednostronne vs Dwustronne):} Domyślnie klasa \texttt{book} zakłada druk dwustronny. Oznacza to, że marginesy na stronach parzystych i nieparzystych są różne (szerszy margines wewnętrzny na oprawę), a każdy nowy rozdział musi zaczynać się na stronie nieparzystej (prawej). Powoduje to powstawanie wielu pustych stron w krótkich dokumentach. Klasa \texttt{report} jest bardziej elastyczna i czytelna przy przeglądaniu dokumentu na ekranie komputera, nie generując zbędnych pustych stron.
+    
+    \item \textbf{Nagłówki i stopki:} W klasie \texttt{book} domyślne nagłówki są przygotowane pod druk dwustronny (tytuł rozdziału na lewej stronie, tytuł sekcji na prawej). W krótszej pracy prostszy układ nagłówków oferowany przez klasę \texttt{report} zapewnia większą przejrzystość i jest łatwiejszy w konfiguracji.
+\end{enumerate}
+\section*{Dostęp do kodu źródłowego}
+Pełny kod źródłowy projektu oraz pliki niniejszej dokumentacji są dostępne w repozytorium GitHub pod adresem:
+
+\vspace{0.5cm} % Mały odstęp
+\noindent
+\url{https://github.com/twoj-login/twoje-repozytorium}
+

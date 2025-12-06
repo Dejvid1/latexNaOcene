@@ -1,0 +1,28 @@
+\chapter{Wprowadzenie do Programowania Obiektowego}
+
+\section{Czym jest Programowanie Obiektowe (OOP)?}
+Programowanie obiektowe (z ang. \textit{Object-Oriented Programming}, w skrócie OOP) to paradygmat programowania, który zrewolucjonizował sposób tworzenia oprogramowania. Zamiast myśleć o programie jako o sekwencji instrukcji i funkcji operujących na danych, OOP proponuje modelowanie rzeczywistości za pomocą \textbf{obiektów}.
+
+Wyobraźmy sobie programowanie proceduralne jako listę zadań dla kucharza: ,,Weź mąkę'', ,,Dodaj wodę'', ,,Wymieszaj''. Jeśli coś pójdzie nie tak, cały proces może się załamać. Programowanie obiektowe jest jak zorganizowana kuchnia. Mamy obiekty: ,,Kucharz'', ,,Piekarnik'', ,,Miska''. Każdy obiekt ma swoje własne dane (\textbf{atrybuty}) oraz własne funkcje (\textbf{metody}).
+
+\section{Główne Założenia i Korzyści}
+Paradygmat obiektowy opiera się na idei łączenia danych oraz funkcji w spójne jednostki. Prowadzi to do wielu korzyści:
+
+\begin{itemize}
+    \item \textbf{Modułowość:} Każdy obiekt jest niezależną jednostką.
+    \item \textbf{Wielokrotne użycie kodu:} Raz zdefiniowana klasa może być używana wielokrotnie.
+    \item \textbf{Łatwiejsze utrzymanie:} Modyfikujesz tylko jedną klasę zamiast przeszukiwać cały kod.
+    \item \textbf{Lepsze odwzorowanie rzeczywistości:} Struktura kodu jest bardziej intuicyjna.
+    \item \textbf{Elastyczność:} Systemy mogą łatwo adaptować się do nowych typów danych dzięki polimorfizmowi.
+\end{itemize}
+
+\section{Klasa vs. Obiekt: Plan i Budynek}
+Dwa najbardziej fundamentalne pojęcia w OOP to \textbf{klasa} i \textbf{obiekt}.
+
+\subsection{Klasa (Class)}
+To jest plan, szablon lub projekt. Klasa \texttt{Samochod} definiuje, że samochód \textit{będzie miał} kolor i markę oraz że \textit{będzie potrafił} jechać. Sama klasa nie jest samochodem – to tylko opis.
+
+\subsection{Obiekt (Object)}
+To jest konkretna, fizyczna \textbf{instancja} klasy. Na podstawie klasy \texttt{Samochod} możemy stworzyć wiele obiektów (np. czerwone Ferrari, niebieski Fiat). Oba obiekty mają te same atrybuty i metody, ale wartości ich atrybutów są niezależne.
+
+Kiedy tworzymy obiekt (proces zwany \textbf{instancjacją}), używamy specjalnej metody zwanej \textbf{konstruktorem}, która pozwala ustawić początkowe wartości atrybutów.
